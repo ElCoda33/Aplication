@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: Teko;
+}
+
+
+.cuerpo{
+    background-image:url(../media/fondo.jpg) ;
+    background-position: top;
+    width: 100%;
+    min-width:200px ;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+
+.cabecera{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: -40px;
+    background-image: linear-gradient(to right, rgba(142,172,196,255) 30%,rgba(255,231,217,255));
+    min-width: none;
+    box-shadow: 0 -3px 10px 1px #555;
+}
+.main{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    
+}
+.articulo{
+    width: 76.55%;
+    min-width: 200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.aparte{
+    padding-top: 200px ;
+    width: 22.45%;
+    height: 100%;
+    border-left: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.articulo__titulo{
+    font-size: 50px;
+    padding-top: 100px;
+}
+
+.pie{
+  height: 300px;
+
+}
+.contacto{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+.contacto__lista{
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    
+}   
+.contacto__li{
+        text-decoration: none;
+        width: 30px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        padding-right: 50px;
+        overflow: hidden;
+        transition-property: width backgroun-color ;
+        transition-duration: 0.4s;
+
+}
+.contacto__texto{
+    text-decoration: none;
+    color: #000;
+    transition-property: color ;
+    transition-duration: 0.4;
+   
+  
+}
+.icono{
+    color:#90d;
+    list-style: none;
+    font-size: 38px;
+    margin: 0px 20px 0 0px;
+
+}   
+.contacto__li:hover{
+    text-decoration: none;
+    cursor: pointer;
+    width: 200px;
+    overflow: none;
+    background-color: #5babc4;
+}
+
+
+.--ultimo:hover{
+    width: 300px;
+
+}
+.navegacion{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion__logo{
+    padding-top: 15px;
+    width: 170px;
+
+}
+.navegacion__titulo:hover{
+    text-shadow: 2px 2px #f0f;
+    cursor: pointer;
+}
+.navegacion__contenedorRed{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+}
+.navegacion__red{
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    padding: 0px 13px 0px 13px;
+    transition-property: text-shadow background-color;
+    transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+   
+    
+}
+.navegacion__red:hover{
+    text-shadow: 1px 1px #f0f;
+    cursor: pointer;
+    background-color: #90d;
+}
+.articulo__titulo{
+   
+    font-size: 100px;
+}
+@media screen and (max-width:1100px){
+    .aparte__titulo{
+        font-size: 0.5em;
+    }
+    .articulo__titulo{
+        font-size: 1.8em;
+    }
+    .aparte__icono{
+        width: 60%;
+    }
+    .seccion__titulo{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:600px){
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aparte{
+        width: 100%;
+    }
+    .aparte__titulo{
+        font-size: 1em;
+    }
+    .articulo__titulo{
+        font-size: 1.5em;
+        padding: 20px 0;
+    }
+    .aparte__icono{
+        width: 60%;
+    }
+    .seccion__titulo{
+        font-size: 1em;
+    }
+}
+
+.seccion__link-ajedrez{
+    text-decoration: none;
+    color: #90d;
+
+}
+.seccion__link-ajedrez:hover{
+    text-decoration: none;
+    color: #b0f;
+    cursor: pointer;
+}
+#icono-menu{
+    display: none;
+}
+.navegacion__menu{
+    display: flex;
+    flex-direction: column;
+}
+.navegacion__lis{
+    border-bottom: 1px solid #888;
+}
+.menuu{
+    overflow: hidden;
+    position: absolute;
+    display: none;
+}

@@ -1,0 +1,127 @@
+
+
+
+    
+    
+
+
+.contenedor{
+    height: 1000px;
+    width: 100%;
+ 
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.tablero{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 32px 32px 0 0;
+    width: 480px;
+    height: 480px ;
+    background-image: url(https://img.freepik.com/foto-gratis/piso-madera-oscura_53876-88979.jpg?size=626&ext=jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #444;
+    box-shadow: 0 0 25px 5px #444;
+    border-radius: 20px;
+    transition-property: border-color box-shadow;
+    transition-duration: 0.5s;
+    min-width: 480px;
+    
+}
+.contenedor__tablero{
+    width: 400px;
+    height: 400px ;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.tablero__contCasi{
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns:repeat(8, 50px);
+    grid-template-rows:repeat(8, 50px) ;
+    
+   
+}
+
+.tablero__casilla{
+    background-color: #fff;
+    
+}
+.tablero__casilla:hover{
+    background-color: #ccc;
+}
+.--negra{
+    background-color: black;
+}
+.--negra:hover{
+    background-color: #222;
+
+}
+.coordenadas__izquierda{
+    height: 400px;
+    width: 50px;
+    display: grid;
+    grid-template-rows: repeat(8, 50px);
+    grid-template-columns: 30px;
+    justify-items: center ;
+    align-items: center;
+    
+}
+.letra{
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    color: #f90;
+
+}
+.coordenadas2{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    position: relative;
+    left: 15px;
+    
+}
+.numeros{
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #f90;
+
+}
+.puntos{
+    width: 40%;
+    height: 300px;
+    background-color: #222;
+    border: 1px solid #f90;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablero:hover{
+    border-color: #666 ;
+    box-shadow: 0 0 25px 5px #111;
+}
+.iniciar{
+    width: 80px;
+    height: 40px;
+    align-self: flex-end;
+}

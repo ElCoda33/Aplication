@@ -1,0 +1,102 @@
+
+@media (max-width:500px){
+
+.navegacion__red{
+    display: none;
+
+}
+.cabecera{
+    position: sticky;
+    top: 0px;
+}
+.contacto.li:hover{
+    color: #90d;
+    width: 30px;
+    
+}
+#icono-menu{
+    color: #90d;
+    display: inline-flex;
+    align-self: center;
+}
+.contacto{
+    display: none;
+}
+.contacto__lista{
+    display: none;
+}
+.menuu{
+    width:200px;
+    height: 700px;
+    background-color: rgb(131, 178, 182);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    box-shadow: -2px 0 10px 1px rgba(0,0,0,0.7);
+    left:-200px;
+    overflow: hidden;
+}
+.aparte__titulo{
+    font-size: 0.5em;
+}
+.articulo__titulo{
+    font-size: 1em;
+}
+.aparte__icono{
+    width: 20%;
+}
+.seccion__titulo{
+    font-size: 0.5em;
+}
+
+.tablero{
+    display: none;
+}
+.puntos{
+    display: none;
+}
+.navegacion__lis{
+    color: #000;
+    text-decoration: none;
+    padding-left: 10px;
+}
+@keyframes entraMenu {
+    0%{
+        left: -200px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+@keyframes saleMenu {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left:-200px;
+    }
+}
+.formulario-contacto{
+    width: 100% !important;
+    margin-top: 50px;
+}
+
+@keyframes botonMenuE {
+    0%{
+        transform: rotatez(0);
+    }
+    0%{
+        transform: rotatez(180deg);
+    }
+}
+@keyframes botonMenuS {
+    0%{
+        transform: rotatez(0);
+    }
+    0%{
+        transform: rotatez(180deg);
+    }
+}
+
+}

@@ -56,13 +56,13 @@ botonProyect2.addEventListener("click", () => {
         I have created a chess
     </h3>
     <p class="articulo__seccion">
-        <a id="botonA" target="blanck" class="seccion__link-ajedrez" href="ajedrez.html">Enter here to see chess</a>
+        <div id="botonA" target="blanck" class="seccion__link-ajedrez" href="ajedrez.html">Enter here to see chess</div>
     </p>
     <h3>
         Here you can create your HTML elements and add some style to them:
     </h3>
     <p class="articulo__seccion">
-        <a class="seccion__link-ajedrez" target="blank" href="Crear Elementos/crearElementos.html">Enter to program</a>
+        <div class="seccion__link-ajedrez" target="blank" href="Crear Elementos/crearElementos.html">Enter to program</div>
     </p>
 </div>
 </article>

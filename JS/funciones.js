@@ -19,10 +19,21 @@ const eliminarLink = (id) => {
   head.removeChild(nombre);
 };
 
+const verificarLink = ()=>{
+
+  
+
+};
+
+
+
+
 //PAGINAS
 
 const crearContacto = () => {
   let link = document.getElementById("link");
+  if (link) head.removeChild(link);
+  link = document.getElementById("link");
   if (!link) insertarLink("CSS/estilosContacto.css", "link");
   main1.innerHTML = "";
   main1.insertAdjacentHTML(
@@ -54,7 +65,9 @@ const crearContacto = () => {
 };
 
 const crearProyectos = () =>{
-    let link = document.getElementById("link");
+  let link = document.getElementById("link");
+  if (link) head.removeChild(link);
+  link = document.getElementById("link");
   if(link)eliminarLink("link");
   main1.innerHTML = "";
   main1.insertAdjacentHTML(
@@ -211,8 +224,9 @@ const crearProyectos = () =>{
 }
 
 const crearSobreMi = () =>{
-    let link = document.getElementById("link");
-  
+  let link = document.getElementById("link");
+  if (link) head.removeChild(link);
+  link = document.getElementById("link");
 if(link)eliminarLink("link");
   main1.innerHTML = "";
   main1.insertAdjacentHTML(

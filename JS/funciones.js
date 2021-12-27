@@ -219,6 +219,7 @@ const crearProyectos = () =>{
               </button>
           </div>
       </div>
+    -
     </div>`
     );
   });

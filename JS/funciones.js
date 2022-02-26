@@ -137,7 +137,7 @@ const crearProyectos = () =>{
                   <div class="tablero__contCasi">
                       <div class="tablero__casilla" id="a8"></div>
                       <div class="tablero__casilla --negra" id="b8"></div>
-                          <div class="tablero__casilla" id="c8"></div>
+                      <div class="tablero__casilla" id="c8"></div>
                       <div class="tablero__casilla --negra" id="d8"></div>
                       <div class="tablero__casilla" id="e8"></div>
                       <div class="tablero__casilla --negra" id="f8"></div>
@@ -222,8 +222,113 @@ const crearProyectos = () =>{
     -
     </div>`
     );
+  
+    let botonIniciar = document.getElementById("boton-iniciar");
+
+  for(let i=1;i<9;i++){
+    conseguirObjeto(`a${i}`,`a${i}`);
+    conseguirObjeto(`b${i}`,`b${i}`);
+    conseguirObjeto(`c${i}`,`c${i}`);
+    conseguirObjeto(`d${i}`,`d${i}`);
+    conseguirObjeto(`e${i}`,`e${i}`);
+    conseguirObjeto(`f${i}`,`f${i}`);
+    conseguirObjeto(`g${i}`,`g${i}`);
+    conseguirObjeto(`h${i}`,`h${i}`);
+  }
+  
+
+  let peones = new Array();
+  for(let i=0;i<16;i++){
+  peones[i] =`<img src="../IconosAjedrez/peon.png" class="pieza" id="pieza${i}"></img>`
+  }
+  
+  let caballos = new Array();
+  for(let i=0;i<4;i++){
+  caballos[i] =`<img src="../IconosAjedrez/caballo.png" class="pieza" id="pieza${i}"></img>`
+  }
+  
+  let torres = new Array();
+  for(let i=0;i<4;i++){
+  torres[i] =`<img src="../IconosAjedrez/torre.png" class="pieza" id="pieza${i}"></img>`
+  }
+
+  let alfiles = new Array();
+  for(let i=0;i<4;i++){
+  alfiles[i] =`<img src="../IconosAjedrez/alfil.png" class="pieza" id="pieza${i}"></img>`
+  
+  }
+  let reyes = new Array();
+  for(let i=0;i<2;i++){
+  reyes[i] =`<img src="../IconosAjedrez/rey.png" class="pieza" id="pieza${i}"></img>`
+  }
+  
+  let damas = new Array();
+  for(let i=0;i<2;i++){
+  damas[i] =`<img src="../IconosAjedrez/dama.png" class="pieza" id="pieza${i}"></img>`
+  }
+
+  
+
+  botonIniciar.addEventListener("click",()=>{
+    
+    //peones
+
+      insertarPieza(peones[0],a2);
+      insertarPieza(peones[1],b2);
+      insertarPieza(peones[2],c2);
+      insertarPieza(peones[3],d2);
+      insertarPieza(peones[4],e2);
+      insertarPieza(peones[5],f2);
+      insertarPieza(peones[6],g2);
+      insertarPieza(peones[7],h2);
+      insertarPieza(peones[8],a7);
+      insertarPieza(peones[9],b7);
+      insertarPieza(peones[10],c7);
+      insertarPieza(peones[11],d7);
+      insertarPieza(peones[12],e7);
+      insertarPieza(peones[13],f7);
+      insertarPieza(peones[14],g7);
+      insertarPieza(peones[15],h7);
+      
+      //caballos
+
+      insertarPieza(caballos[0],b1);
+      insertarPieza(caballos[1],g1);
+      insertarPieza(caballos[2],b8);
+      insertarPieza(caballos[3],g8);
+      
+      //torres
+      
+      insertarPieza(torres[0],a1);
+      insertarPieza(torres[1],h1);
+      insertarPieza(torres[2],a8);
+      insertarPieza(torres[3],h8);
+
+      //alfiles
+
+      insertarPieza(alfiles[0],c1);
+      insertarPieza(alfiles[1],f1);
+      insertarPieza(alfiles[2],c8);
+      insertarPieza(alfiles[3],f8);
+
+      //reyes y damas
+
+      insertarPieza(reyes[0],e1);
+      insertarPieza(reyes[1],e8);
+      insertarPieza(damas[0],d1);
+      insertarPieza(damas[1],d8);
+
+  });
+  
+  
+  
+
   });
 }
+
+
+
+
 
 const crearSobreMi = () =>{
   let link = document.getElementById("link");
@@ -244,7 +349,7 @@ if(link)eliminarLink("link");
                 It all started with my curiosity
             </h3>
             <p class="secccion__texto">
-                Hello, my name is Lucas Perez
+                Hello, my name is Lucas Pérez
             </p>
         </div>
     </article>
@@ -259,4 +364,14 @@ if(link)eliminarLink("link");
 </footer>
 </div`
   );
+}
+
+const conseguirObjeto=(id,nombre)=>{
+  nombre = document.getElementById(`${id}`);
+  return nombre;
+}
+
+function insertarPieza(pieza, casilla) {
+  casilla.insertAdjacentHTML("afterbegin", pieza);
+
 }

@@ -10,6 +10,7 @@ botonAbout.addEventListener("click", () => {
 // MY PROYECTS (AJEDREZ, CREADOR DE HTML)
 botonMy.addEventListener("click", () => {
     crearProyectos();
+    
 });
 
 // CONTACTO

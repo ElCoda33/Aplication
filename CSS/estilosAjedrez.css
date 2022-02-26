@@ -56,17 +56,19 @@
 }
 
 .tablero__casilla{
-    background-color: #fff;
-    
+    background-color: rgb(135, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tablero__casilla:hover{
-    background-color: #ccc;
+    background-color: rgb(167, 36, 36);
 }
 .--negra{
-    background-color: black;
+    background-color: rgb(104, 66, 41);
 }
 .--negra:hover{
-    background-color: #222;
+    background-color: rgb(136, 89, 57);
 
 }
 .coordenadas__izquierda{

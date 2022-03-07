@@ -40,112 +40,11 @@ const botonAbout2 = document.getElementById("boton-about2");
 const botonContact2 = document.getElementById("boton-contact2");
 
 botonProyect2.addEventListener("click", () => {
-  link = document.getElementById("link");
-  main1.innerHTML = "";
-  main1.insertAdjacentHTML(
-    "afterbegin",
-    `
-
-<div class="main">
-<article class="articulo">
-<h1 class="articulo__titulo">
-    My proyects
-</h1>
-<div class="contenedor__articulo">
-    <h3>
-        I have created a chess
-    </h3>
-    <p class="articulo__seccion">
-        <div id="botonA" target="blanck" class="seccion__link-ajedrez" href="ajedrez.html">Enter here to see chess</div>
-    </p>
-    <h3>
-        Here you can create your HTML elements and add some style to them:
-    </h3>
-    <p class="articulo__seccion">
-        <div class="seccion__link-ajedrez" target="blank" href="Crear Elementos/crearElementos.html">Enter to program</div>
-    </p>
-</div>
-</article>
-<aside class="aparte">
-<b>I work with this technologies</b>
-<img class="icono__apartecss" src="media/css3i.png" alt="css">
-<img class="icono__apartehtml" src="media/html5i.png" alt="html">
-
-</aside>
-   
-<footer class="pie">
-
-</footer>
-`
-  );
-  if (link) head.removeChild(link);
+  crearProyectos();
 });
 botonAbout2.addEventListener("click", () => {
-  link = document.getElementById("link");
-  main1.innerHTML = "";
-  main1.insertAdjacentHTML(
-    "afterbegin",
-    `
-<div class="main">
-    <article class="articulo">
-        <h1 class="articulo__titulo">
-            Here i talk you about me
-        </h1>
-        <div class="contenedor__seccion">
-            <h3 class="seccion__titulo">
-                It all started with my curiosity
-            </h3>
-            <p class="secccion__texto">
-                sdafasdf
-            </p>
-        </div>
-    </article>
-<aside class="aparte">
-        <b class="aparte__titulo">I work with this technologies</b>
-        <img class="aparte__icono" src="media/css3i.png" alt="css">
-        <img class="aparte__icono" src="media/html5i.png" alt="html">
-
-</aside>
-<footer class="pie">
-
-</footer>
-</div`
-  );
-  if (link) head.removeChild(link);
+  crearSobreMi();
 });
 botonContact2.addEventListener("click", () => {
-  let link = document.getElementById("link");
-  main1.innerHTML = "";
-  main1.insertAdjacentHTML(
-    "afterbegin",
-    `
-  <div class="main">
-      <article class="articulo">
-          <form action="" class="formulario-contacto">
-              <input type="text" class="formulario__input" placeholder="Enter name" required>
-              <input type="email" class="formulario__input" placeholder="Enter email"required>
-              <input type="text" class="formulario__input" placeholder="Reason"required>
-              <textarea name="" id="" cols="30" rows="10" class="formulario__input --text-area" placeholder="Enter message"required></textarea>
-              <input type="submit" class="formulario__boton" name="" id="boton-form"required>
-          </form>
-      </article>
-  <aside class="aparte">
-          <b class="aparte__titulo">I work with this technologies</b>
-          <img class="aparte__icono" src="media/css3i.png" alt="css">
-          <img class="aparte__icono" src="media/html5i.png" alt="html">
-
-  </aside>
-  </div>
-  <footer class="pie">
-
-  </footer>
-
-  `
-  );
-  if (!link) {
-    head.insertAdjacentHTML(
-      "beforeend",
-      `<link rel="stylesheet" href="CSS/estilosContacto.css" id="link" >`
-    );
-  }
+  crearContacto();
 });

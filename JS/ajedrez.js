@@ -1,0 +1,3 @@
+const movimientoPeon=(pieza, casilla)=>{
+
+}

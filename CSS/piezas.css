@@ -1,3 +1,6 @@
-#pieza1{
-    
+.pieza:hover{
+    cursor:grab;
+}
+.piezas{
+    color: white;
 }

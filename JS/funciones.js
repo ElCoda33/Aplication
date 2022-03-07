@@ -236,89 +236,133 @@ const crearProyectos = () =>{
     conseguirObjeto(`h${i}`,`h${i}`);
   }
   
+  for(let i=0;i<56;i++){
+    eDrag(`a${i}`,`peonesBlancos${i}`);
 
-  let peones = new Array();
-  for(let i=0;i<16;i++){
-  peones[i] =`<img src="../IconosAjedrez/peon.png" class="pieza" id="pieza${i}"></img>`
-  }
-  
-  let caballos = new Array();
-  for(let i=0;i<4;i++){
-  caballos[i] =`<img src="../IconosAjedrez/caballo.png" class="pieza" id="pieza${i}"></img>`
-  }
-  
-  let torres = new Array();
-  for(let i=0;i<4;i++){
-  torres[i] =`<img src="../IconosAjedrez/torre.png" class="pieza" id="pieza${i}"></img>`
   }
 
-  let alfiles = new Array();
-  for(let i=0;i<4;i++){
-  alfiles[i] =`<img src="../IconosAjedrez/alfil.png" class="pieza" id="pieza${i}"></img>`
+  let peonesNegros= new Array();
+  for(let i=0;i<8;i++){
+  peonesNegros[i] =`<img src="../IconosAjedrez/peonNegro.png" class="pieza" id="peonNegro${i}"></img>`
+  }  
   
+  let peonesBlancos = new Array();
+  for(let i=0;i<8;i++){
+  peonesBlancos[i] =`<img src="../IconosAjedrez/peonBlanco.png" class="pieza" id="peonBlanco${i}"></img>`
   }
-  let reyes = new Array();
+  
+  let caballosBlancos = new Array();
   for(let i=0;i<2;i++){
-  reyes[i] =`<img src="../IconosAjedrez/rey.png" class="pieza" id="pieza${i}"></img>`
+  caballosBlancos[i] =`<img src="../IconosAjedrez/caballoBlanco.png" class="pieza" id="caballoBlanco${i}"></img>`
   }
-  
-  let damas = new Array();
+
+  let caballosNegros = new Array();
   for(let i=0;i<2;i++){
-  damas[i] =`<img src="../IconosAjedrez/dama.png" class="pieza" id="pieza${i}"></img>`
+  caballosNegros[i] =`<img src="../IconosAjedrez/caballoNegro.png" class="pieza" id="caballoNegro${i}"></img>`
   }
+  
+  let torresBlancas = new Array();
+  for(let i=0;i<2;i++){
+  torresBlancas[i] =`<img src="../IconosAjedrez/torreBlanca.png" class="pieza" id="torreBlanca${i}"></img>`
+  }
+  
+  let torresNegras = new Array();
+  for(let i=0;i<2;i++){
+  torresNegras[i] =`<img src="../IconosAjedrez/torreNegra.png" class="pieza" id="torreNegra${i}"></img>`
+  }
+
+  let alfilesNegros = new Array();
+  for(let i=0;i<2;i++){
+  alfilesNegros[i] =`<img src="../IconosAjedrez/alfilNegro.png" class="pieza" id="alfilNegro${i}"></img>`
+  
+  }
+  let alfilesBlancos = new Array();
+  for(let i=0;i<2;i++){
+  alfilesBlancos[i] =`<img src="../IconosAjedrez/alfilBlanco.png" class="pieza" id="alfilBlanco${i}"></img>`
+  
+  }
+  let reyBlanco;
+  reyBlanco =`<img src="../IconosAjedrez/reyBlanco.png" class="pieza" id="reyBlanco"></img>`;
+  
+  let reyNegro;
+  reyNegro =`<img src="../IconosAjedrez/reyNegro.png" class="pieza" id="reyNegro"></img>`;
+
+  
+  let damaBlanca;
+  
+  damaBlanca =`<img src="../IconosAjedrez/damaBlanca.png" class="pieza" id="damaBlanca"></img>`;
+  
+  let damaNegra;
+  
+  damaNegra =`<img src="../IconosAjedrez/damaNegra.png" class="pieza" id="damaNegra"></img>`;
+  
+  let verificar=true;
 
   
 
-  botonIniciar.addEventListener("click",()=>{
+    botonIniciar.addEventListener("click",()=>{
     
-    //peones
-
-      insertarPieza(peones[0],a2);
-      insertarPieza(peones[1],b2);
-      insertarPieza(peones[2],c2);
-      insertarPieza(peones[3],d2);
-      insertarPieza(peones[4],e2);
-      insertarPieza(peones[5],f2);
-      insertarPieza(peones[6],g2);
-      insertarPieza(peones[7],h2);
-      insertarPieza(peones[8],a7);
-      insertarPieza(peones[9],b7);
-      insertarPieza(peones[10],c7);
-      insertarPieza(peones[11],d7);
-      insertarPieza(peones[12],e7);
-      insertarPieza(peones[13],f7);
-      insertarPieza(peones[14],g7);
-      insertarPieza(peones[15],h7);
+    //Verificacion
       
-      //caballos
+    if(verificar){
+        
+        //peones
 
-      insertarPieza(caballos[0],b1);
-      insertarPieza(caballos[1],g1);
-      insertarPieza(caballos[2],b8);
-      insertarPieza(caballos[3],g8);
+        insertarPieza(peonesBlancos[0],a2);
+        insertarPieza(peonesBlancos[1],b2);
+        insertarPieza(peonesBlancos[2],c2);
+        insertarPieza(peonesBlancos[3],d2);
+        insertarPieza(peonesBlancos[4],e2);
+        insertarPieza(peonesBlancos[5],f2);
+        insertarPieza(peonesBlancos[6],g2);
+        insertarPieza(peonesBlancos[7],h2);
+        insertarPieza(peonesNegros[0],a7);
+        insertarPieza(peonesNegros[1],b7);
+        insertarPieza(peonesNegros[2],c7);
+        insertarPieza(peonesNegros[3],d7);
+        insertarPieza(peonesNegros[4],e7);
+        insertarPieza(peonesNegros[5],f7);
+        insertarPieza(peonesNegros[6],g7);
+        insertarPieza(peonesNegros[7],h7);
+        
+        //caballos
+  
+        insertarPieza(caballosBlancos[0],b1);
+        insertarPieza(caballosBlancos[1],g1);
+        insertarPieza(caballosNegros[0],b8);
+        insertarPieza(caballosNegros[1],g8);
+        
+        //torres
+        
+        insertarPieza(torresBlancas[0],a1);
+        insertarPieza(torresBlancas[1],h1);
+        insertarPieza(torresNegras[0],a8);
+        insertarPieza(torresNegras[1],h8);
+  
+        //alfiles
+  
+        insertarPieza(alfilesBlancos[0],c1);
+        insertarPieza(alfilesBlancos[1],f1);
+        insertarPieza(alfilesNegros[0],c8);
+        insertarPieza(alfilesNegros[1],f8);
+  
+        //reyes y damas
+  
+        insertarPieza(reyBlanco,e1);
+        insertarPieza(reyNegro,e8);
+        insertarPieza(damaBlanca,d1);
+        insertarPieza(damaNegra,d8);
       
-      //torres
+        verificar=false;
       
-      insertarPieza(torres[0],a1);
-      insertarPieza(torres[1],h1);
-      insertarPieza(torres[2],a8);
-      insertarPieza(torres[3],h8);
+      }
 
-      //alfiles
 
-      insertarPieza(alfiles[0],c1);
-      insertarPieza(alfiles[1],f1);
-      insertarPieza(alfiles[2],c8);
-      insertarPieza(alfiles[3],f8);
+      
+    
+    
 
-      //reyes y damas
-
-      insertarPieza(reyes[0],e1);
-      insertarPieza(reyes[1],e8);
-      insertarPieza(damas[0],d1);
-      insertarPieza(damas[1],d8);
-
-  });
+    });
   
   
   
@@ -374,4 +418,14 @@ const conseguirObjeto=(id,nombre)=>{
 function insertarPieza(pieza, casilla) {
   casilla.insertAdjacentHTML("afterbegin", pieza);
 
+}
+
+const movimientoPieza = ()=>{
+
+}
+
+const eDrag = (elemento,elementoSolatar)=>{
+  elemento.addEventListener("drop", ()=>{
+    elemento.appendChild(elementoSolatar);
+  })
 }

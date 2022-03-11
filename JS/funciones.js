@@ -236,10 +236,6 @@ const crearProyectos = () =>{
     conseguirObjeto(`h${i}`,`h${i}`);
   }
   
-  for(let i=0;i<56;i++){
-    eDrag(`a${i}`,`peonesBlancos${i}`);
-
-  }
 
   let peonesNegros= new Array();
   for(let i=0;i<8;i++){

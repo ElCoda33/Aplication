@@ -1,12 +1,12 @@
-const crearSobreMi = () =>{
-    let link = document.getElementById("link");
-    if (link) head.removeChild(link);
-    link = document.getElementById("link");
-  if(link)eliminarLink("link");
-    main1.innerHTML = "";
-    main1.insertAdjacentHTML(
-      "afterbegin",
-      `
+const crearSobreMi = () => {
+  let link = document.getElementById("link");
+  if (link) head.removeChild(link);
+  link = document.getElementById("link");
+  if (link) eliminarLink("link");
+  main1.innerHTML = "";
+  main1.insertAdjacentHTML(
+    "afterbegin",
+    `
   <div class="main">
       <article class="articulo">
           <h1 class="articulo__titulo">
@@ -31,5 +31,5 @@ const crearSobreMi = () =>{
   
   </footer>
   </div`
-    );
-  }
+  );
+};

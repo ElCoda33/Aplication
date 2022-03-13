@@ -1,12 +1,12 @@
 const crearContacto = () => {
-    let link = document.getElementById("link");
-    if (link) head.removeChild(link);
-    link = document.getElementById("link");
-    if (!link) insertarLink("CSS/estilosContacto.css", "link");
-    main1.innerHTML = "";
-    main1.insertAdjacentHTML(
-      "afterbegin",
-      `
+  let link = document.getElementById("link");
+  if (link) head.removeChild(link);
+  link = document.getElementById("link");
+  if (!link) insertarLink("CSS/estilosContacto.css", "link");
+  main1.innerHTML = "";
+  main1.insertAdjacentHTML(
+    "afterbegin",
+    `
         <div class="main">
             <article class="articulo">
                 <form action="" class="formulario-contacto">
@@ -29,5 +29,5 @@ const crearContacto = () => {
         </footer>
     
         `
-    );
-  };
+  );
+};

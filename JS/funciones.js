@@ -1,4 +1,3 @@
-
 //INSERTAR ESTILOS O ELIMINAR ESTOS
 
 const insertarLink = (url, id) => {
@@ -15,34 +14,27 @@ const eliminarLink = (id) => {
   head.removeChild(nombre);
 };
 
-const verificarLink = ()=>{
+const verificarLink = () => {};
 
-  
-
-};
-
-
-
-const conseguirObjeto=(id,nombre)=>{
+const conseguirObjeto = (id, nombre) => {
   nombre = document.getElementById(`${id}`);
   return nombre;
-}
+};
 
-const insertarScript = (nombreScript)=>{
-  body.insertAdjacentHTML("beforeEnd",`<script src="JS/${nombreScript}"></script>`);
-}
+const insertarScript = (nombreScript) => {
+  body.insertAdjacentHTML(
+    "beforeEnd",
+    `<script src="JS/${nombreScript}"></script>`
+  );
+};
 
-const comprovacionLink = (nombreLink)=>{
+const comprovacionLink = (nombreLink) => {
   link = document.getElementById("link");
   if (link) head.removeChild(link);
-      if (!link) {
-        head.insertAdjacentHTML(
-          "beforeend",
-          `<link rel="stylesheet" href="${nombreLink}" id="link" >`
-          
-        );
-      }
-}
-
-
-
+  if (!link) {
+    head.insertAdjacentHTML(
+      "beforeend",
+      `<link rel="stylesheet" href="${nombreLink}" id="link" >`
+    );
+  }
+};

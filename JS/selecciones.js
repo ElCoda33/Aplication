@@ -1,5 +1,4 @@
 
-let bodyy = document.querySelector("#bodyy");
 let body = document.getElementById("body");
 let botonMy = document.getElementById("my-proyects");
 let botonAbout = document.getElementById("boton-about");

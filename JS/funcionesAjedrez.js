@@ -116,6 +116,7 @@ function Ajedrez() {
                 </div>
             </div>
             <div class="puntos">
+                <div class="puntos__piezas" id="contenedorPiezas"></div>
                 <button class="iniciar" id="boton-iniciar" value="Iniciar">
                     Iniciar
                 </button>
@@ -289,6 +290,6 @@ function iniciarAjedrez() {
   conseguirObjeto(`damaBlanca`, `damaBlanca`);
   conseguirObjeto(`damaNegra`, `damaNegra`);
 
-  movimientosPeones();
+  movimientosPiezas();
 
 }

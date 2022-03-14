@@ -115,6 +115,7 @@
     border: 1px solid #f90;
     border-radius: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -125,5 +126,13 @@
 .iniciar{
     width: 80px;
     height: 40px;
-    align-self: flex-end;
+}
+.puntos__piezas{
+    width: 50%;
+    height: 50%;
+    background-color:#020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }

@@ -135,69 +135,69 @@ const ajedrez = () => {
     for (let i = 0; i < 8; i++) {
       peonesNegros[
         i
-      ] = `<img src="/IconosAjedrez/peonNegro.png" class="pieza" id="peonNegro${i}"></img>`;
+      ] = `<img src="IconosAjedrez/peonNegro.png" class="pieza" id="peonNegro${i}"></img>`;
     }
 
     let peonesBlancos = new Array();
     for (let i = 0; i < 8; i++) {
       peonesBlancos[
         i
-      ] = `<img src="/IconosAjedrez/peonBlanco.png" class="pieza" id="peonBlanco${i}"></img>`;
+      ] = `<img src="IconosAjedrez/peonBlanco.png" class="pieza" id="peonBlanco${i}"></img>`;
     }
 
     let caballosBlancos = new Array();
     for (let i = 0; i < 2; i++) {
       caballosBlancos[
         i
-      ] = `<img src="/IconosAjedrez/caballoBlanco.png" class="pieza" id="caballoBlanco${i}"></img>`;
+      ] = `<img src="IconosAjedrez/caballoBlanco.png" class="pieza" id="caballoBlanco${i}"></img>`;
     }
 
     let caballosNegros = new Array();
     for (let i = 0; i < 2; i++) {
       caballosNegros[
         i
-      ] = `<img src="/IconosAjedrez/caballoNegro.png" class="pieza" id="caballoNegro${i}"></img>`;
+      ] = `<img src="IconosAjedrez/caballoNegro.png" class="pieza" id="caballoNegro${i}"></img>`;
     }
 
     let torresBlancas = new Array();
     for (let i = 0; i < 2; i++) {
       torresBlancas[
         i
-      ] = `<img src="/IconosAjedrez/torreBlanca.png" class="pieza" id="torreBlanca${i}"></img>`;
+      ] = `<img src="IconosAjedrez/torreBlanca.png" class="pieza" id="torreBlanca${i}"></img>`;
     }
 
     let torresNegras = new Array();
     for (let i = 0; i < 2; i++) {
       torresNegras[
         i
-      ] = `<img src="/IconosAjedrez/torreNegra.png" class="pieza" id="torreNegra${i}"></img>`;
+      ] = `<img src="IconosAjedrez/torreNegra.png" class="pieza" id="torreNegra${i}"></img>`;
     }
 
     let alfilesNegros = new Array();
     for (let i = 0; i < 2; i++) {
       alfilesNegros[
         i
-      ] = `<img src="/IconosAjedrez/alfilNegro.png" class="pieza" id="alfilNegro${i}"></img>`;
+      ] = `<img src="IconosAjedrez/alfilNegro.png" class="pieza" id="alfilNegro${i}"></img>`;
     }
     let alfilesBlancos = new Array();
     for (let i = 0; i < 2; i++) {
       alfilesBlancos[
         i
-      ] = `<img src="/IconosAjedrez/alfilBlanco.png" class="pieza" id="alfilBlanco${i}"></img>`;
+      ] = `<img src="IconosAjedrez/alfilBlanco.png" class="pieza" id="alfilBlanco${i}"></img>`;
     }
     let reyBlanco;
-    reyBlanco = `<img src="/IconosAjedrez/reyBlanco.png" class="pieza" id="reyBlanco"></img>`;
+    reyBlanco = `<img src="IconosAjedrez/reyBlanco.png" class="pieza" id="reyBlanco"></img>`;
 
     let reyNegro;
-    reyNegro = `<img src="/IconosAjedrez/reyNegro.png" class="pieza" id="reyNegro"></img>`;
+    reyNegro = `<img src="IconosAjedrez/reyNegro.png" class="pieza" id="reyNegro"></img>`;
 
     let damaBlanca;
 
-    damaBlanca = `<img src="/IconosAjedrez/damaBlanca.png" class="pieza" id="damaBlanca"></img>`;
+    damaBlanca = `<img src="IconosAjedrez/damaBlanca.png" class="pieza" id="damaBlanca"></img>`;
 
     let damaNegra;
 
-    damaNegra = `<img src="/IconosAjedrez/damaNegra.png" class="pieza" id="damaNegra"></img>`;
+    damaNegra = `<img src="IconosAjedrez/damaNegra.png" class="pieza" id="damaNegra"></img>`;
 
     let verificar = true;
 

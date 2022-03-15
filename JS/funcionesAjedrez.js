@@ -1,21 +1,7 @@
-function eDrag(casilla) {
-  casilla.addEventListener("dragover", (e) => {
-    e.preventDefault();
-  });
-  casilla.addEventListener("drop", (e) => {
-    transferirDatos("");
-  });
-}
-
-const movimientoPieza = () => {};
-
 function insertarPieza(pieza, casilla) {
   casilla.insertAdjacentHTML("afterbegin", pieza);
 }
-
-const movimientoPeon = (pieza, casilla) => {};
-
-function Ajedrez() {
+function ajedrez() {
   comprovacionLink("CSS/estilosAjedrez.css");
   main1.innerHTML = "";
   main1.insertAdjacentHTML(
@@ -291,5 +277,4 @@ function iniciarAjedrez() {
   conseguirObjeto(`damaNegra`, `damaNegra`);
 
   movimientosPiezas();
-
 }

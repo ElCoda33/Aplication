@@ -42,7 +42,7 @@ const crearProyectos = () => {
   );
 
   botonA.addEventListener("click", () => {
-    Ajedrez();
+    ajedrez();
 
     let iniciar = true;
 

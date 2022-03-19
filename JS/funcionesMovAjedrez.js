@@ -1,5 +1,5 @@
 let coordenadaLetras = ["a", "b", "c", "d", "e", "f", "g", "h"];
-
+const sonidoPieza = new Audio("media/sonidoPieza.mp4");
 
 
 const dropPiezas = () => {
@@ -29,7 +29,9 @@ const dropPiezas = () => {
 
 
             casilla.appendChild(document.getElementById(peon));
+
         };
+        sonidoPieza.play();
       });
     }
   }

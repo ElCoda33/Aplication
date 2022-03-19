@@ -1,6 +1,6 @@
 .pieza:hover{
     cursor:grab;
 }
-.piezas{
-    color: white;
+.pieza{
+    height: 50px;
 }

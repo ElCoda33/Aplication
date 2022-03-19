@@ -32,10 +32,11 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    z-index: 1000;
+    z-index: 11000;
     box-shadow: -2px 0 10px 1px rgba(0,0,0,0.7);
     left:-200px;
     overflow: hidden;
+
 }
 .aparte__titulo{
     font-size: 0.5em;
@@ -98,5 +99,7 @@
         transform: rotatez(180deg);
     }
 }
+
+
 
 }

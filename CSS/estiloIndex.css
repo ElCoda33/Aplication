@@ -56,6 +56,7 @@
     border-left: 1px solid #888;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -169,6 +170,8 @@
    
     
 }
+
+
 .navegacion__red:hover{
     text-shadow: 1px 1px #f0f;
     cursor: pointer;

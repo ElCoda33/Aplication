@@ -244,3 +244,11 @@
     display: none;
     
 }
+.secccion__texto{
+    padding: 2em;
+}
+.contenedor__seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

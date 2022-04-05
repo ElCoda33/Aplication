@@ -189,7 +189,11 @@ const sobreMiHTML = `
   <h1 class="articulo__titulo">Here i talk you about me</h1>
   <div class="contenedor__seccion">
     <h3 class="seccion__titulo">It all started with my curiosity</h3>
-    <p class="secccion__texto">Hello, my name is Lucas Pérez</p>
+    <p class="secccion__texto">Hello, my name is Lucas Pérez. I'm a person who, although I don't have much verified education, I believe that my desire to learn has overcome those barriers, since with a lot of effort and dedication that I make every day I've learned and continue to learn in a self-taught way.
+    I'm looking for a company for that I can develop in the professional world and adapt to the methodologies of said company. 
+    I like teamwork and I consider that the present is only possible as a team. I've learned only with my abilities to find answers at internet.
+    Internet is it everyone neded, there are not excuses to don't learn.</p>
+
   </div>
 </div>
 <aside class="aparte">
